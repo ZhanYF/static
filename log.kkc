@@ -1,0 +1,175 @@
+===> fcitx5-kkc-5.0.6 depends on: gettext-tools-* -> gettext-tools-0.21p1
+===> fcitx5-kkc-5.0.6 depends on: fcitx5-* -> fcitx5-5.0.11
+===> fcitx5-kkc-5.0.6 depends on: iso-codes-* -> iso-codes-4.5.0
+===> fcitx5-kkc-5.0.6 depends on: extra-cmake-modules->=5.89.0 -> extra-cmake-modules-5.89.0
+===> fcitx5-kkc-5.0.6 depends on: cmake-* -> cmake-3.20.3p2v0
+===> fcitx5-kkc-5.0.6 depends on: ninja->=1.5.1 -> ninja-1.10.2p0
+===> fcitx5-kkc-5.0.6 depends on: qttools-* -> qttools-5.15.2
+===> fcitx5-kkc-5.0.6 depends on: fcitx5-qt-* -> fcitx5-qt-5.0.9
+===> fcitx5-kkc-5.0.6 depends on: libkkc-* -> libkkc-20210214
+===> fcitx5-kkc-5.0.6 depends on: libkkc-data-* -> libkkc-data-0.2.7
+===> fcitx5-kkc-5.0.6 depends on: qtbase-* -> qtbase-5.15.2p6
+===>  Verifying specs:  Fcitx5Config Fcitx5Core Fcitx5Qt5WidgetsAddons Fcitx5Utils Qt5Core Qt5Gui Qt5Widgets gee-0.8 gio-2.0 glib-2.0 gobject-2.0 intl json-glib-1.0 kkc m
+===>  found Fcitx5Config.0.0 Fcitx5Core.0.0 Fcitx5Qt5WidgetsAddons.0.0 Fcitx5Utils.0.0 Qt5Core.3.0 Qt5Gui.3.0 Qt5Widgets.3.0 gee-0.8.3.1 gio-2.0.4200.14 glib-2.0.4201.7 gobject-2.0.4200.14 intl.7.0 json-glib-1.0.6.1 kkc.2.0 m.10.1
+===>  Checking files for fcitx5-kkc-5.0.6
+`/portworks/distfiles/fcitx5-kkc-5.0.6.tar.gz' is up to date.
+>> (SHA256) fcitx5-kkc-5.0.6.tar.gz: OK
+===>  Extracting for fcitx5-kkc-5.0.6
+===>  Patching for fcitx5-kkc-5.0.6
+===>   Applying OpenBSD patch patch-gui_CMakeLists_txt
+Hmm...  Looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|$OpenBSD$
+|
+|Index: gui/CMakeLists.txt
+|--- gui/CMakeLists.txt.orig
+|+++ gui/CMakeLists.txt
+--------------------------
+Patching file gui/CMakeLists.txt using Plan A...
+Hunk #1 succeeded at 22.
+done
+===>  Compiler link: clang -> /usr/bin/clang
+===>  Compiler link: clang++ -> /usr/bin/clang++
+===>  Compiler link: cc -> /usr/bin/cc
+===>  Compiler link: c++ -> /usr/bin/c++
+===>  Generating configure for fcitx5-kkc-5.0.6
+===>  Configuring for fcitx5-kkc-5.0.6
+-- The C compiler identification is Clang 13.0.0
+-- The CXX compiler identification is Clang 13.0.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /portworks/obj/fcitx5-kkc-5.0.6/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /portworks/obj/fcitx5-kkc-5.0.6/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+-- Installing in the same prefix as Fcitx, adopting their path scheme by default
+-- Found LibKKC: /usr/local/lib/libkkc.so.2.0  
+-- Found Gettext: /usr/local/bin/msgmerge (found version "0.21") 
+-- Checking for module 'gee-0.8'
+--   Found gee-0.8, version 0.20.4
+-- Checking for module 'json-glib-1.0'
+--   Found json-glib-1.0, version 1.6.6
+-- Checking for module 'gobject-2.0'
+--   Found gobject-2.0, version 2.70.2
+-- The following REQUIRED packages have been found:
+
+ * ECM
+ * Fcitx5Core (required version >= 5.0.6)
+ * PkgConfig
+ * LibKKC
+ * Gettext
+ * Qt5 (required version >= 5.7)
+ * Qt5Core (required version >= 5.1.0)
+ * Qt5Gui (required version >= 5.1.0)
+ * Qt5Widgets (required version >= 5.1.0)
+ * Fcitx5Qt5WidgetsAddons
+
+-- Configuring done
+-- Generating done
+CMake Warning:
+  Manually-specified variables were not used by the project:
+
+    ALLOW_UNDEFINED_LIB_SYMBOLS
+    CMAKE_DISABLE_FIND_PACKAGE_PythonModuleGeneration
+    ECM_MKSPECS_INSTALL_DIR
+    KDE_INSTALL_LIBEXECDIR
+    KDE_INSTALL_MANDIR
+    KDE_INSTALL_QMLDIR
+    KDE_INSTALL_QTPLUGINDIR
+    KDE_INSTALL_SHAREDSTATEDIR
+    KDE_INSTALL_SYSCONFDIR
+
+
+-- Build files have been written to: /portworks/obj/fcitx5-kkc-5.0.6/build-amd64
+===>  Building for fcitx5-kkc-5.0.6
+[1/30] cd /portworks/obj/fcitx5-kkc-5.0.6/build-amd64 && /usr/local/bin/msgfmt --xml -d /portworks/obj/fcitx5-kkc-5.0.6/fcitx5-kkc-5.0.6/po --template /portworks/obj/fcitx5-kkc-5.0.6/fcitx5-kkc-5.0.6/org.fcitx.Fcitx5.Addon.Kkc.metainfo.xml.in -o /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/org.fcitx.Fcitx5.Addon.Kkc.metainfo.xml
+[2/30] cd /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/po && /usr/local/bin/msgfmt -o /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/po/fcitx5-kkc-ca.mo /portworks/obj/fcitx5-kkc-5.0.6/fcitx5-kkc-5.0.6/po/ca.po
+[3/30] cd /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/po && /usr/local/bin/msgfmt -o /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/po/fcitx5-kkc-da.mo /portworks/obj/fcitx5-kkc-5.0.6/fcitx5-kkc-5.0.6/po/da.po
+[4/30] cd /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/po && /usr/local/bin/msgfmt -o /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/po/fcitx5-kkc-de.mo /portworks/obj/fcitx5-kkc-5.0.6/fcitx5-kkc-5.0.6/po/de.po
+[5/30] cd /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/po && /usr/local/bin/msgfmt -o /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/po/fcitx5-kkc-he.mo /portworks/obj/fcitx5-kkc-5.0.6/fcitx5-kkc-5.0.6/po/he.po
+[6/30] cd /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/po && /usr/local/bin/msgfmt -o /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/po/fcitx5-kkc-ja.mo /portworks/obj/fcitx5-kkc-5.0.6/fcitx5-kkc-5.0.6/po/ja.po
+[7/30] cd /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/po && /usr/local/bin/msgfmt -o /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/po/fcitx5-kkc-ko.mo /portworks/obj/fcitx5-kkc-5.0.6/fcitx5-kkc-5.0.6/po/ko.po
+[8/30] cd /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/po && /usr/local/bin/msgfmt -o /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/po/fcitx5-kkc-ru.mo /portworks/obj/fcitx5-kkc-5.0.6/fcitx5-kkc-5.0.6/po/ru.po
+[9/30] cd /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/po && /usr/local/bin/msgfmt -o /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/po/fcitx5-kkc-tr.mo /portworks/obj/fcitx5-kkc-5.0.6/fcitx5-kkc-5.0.6/po/tr.po
+[10/30] cd /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/po && /usr/local/bin/msgfmt -o /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/po/fcitx5-kkc-zh_CN.mo /portworks/obj/fcitx5-kkc-5.0.6/fcitx5-kkc-5.0.6/po/zh_CN.po
+[11/30] cd /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/po && /usr/local/bin/msgfmt -o /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/po/fcitx5-kkc-zh_TW.mo /portworks/obj/fcitx5-kkc-5.0.6/fcitx5-kkc-5.0.6/po/zh_TW.po
+[12/30] /portworks/obj/fcitx5-kkc-5.0.6/bin/c++ -DFCITX_GETTEXT_DOMAIN=\"fcitx5-kkc\" -DFCITX_INSTALL_LOCALEDIR=\"/usr/local/share/locale\" -D_GNU_SOURCE -Dkkc_EXPORTS -I. -isystem /usr/local/include/Fcitx5/Core -isystem /usr/local/include/Fcitx5/Config -isystem /usr/local/include/Fcitx5/Utils -isystem /usr/local/include -isystem /usr/local/include/glib-2.0 -isystem /usr/local/lib/glib-2.0/include -isystem /usr/local/include/json-glib-1.0 -isystem /usr/local/include/gee-0.8 -Wall -Wextra -O2 -pipe -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -pthread -std=c++17 -MD -MT src/CMakeFiles/kkc.dir/kkc.cpp.o -MF src/CMakeFiles/kkc.dir/kkc.cpp.o.d -o src/CMakeFiles/kkc.dir/kkc.cpp.o -c /portworks/obj/fcitx5-kkc-5.0.6/fcitx5-kkc-5.0.6/src/kkc.cpp
+[13/30] cd /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/src && /usr/local/bin/msgfmt --desktop -d /portworks/obj/fcitx5-kkc-5.0.6/fcitx5-kkc-5.0.6/po --template /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/src/kkc-addon.conf.in -o /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/src/kkc-addon.conf
+[14/30] cd /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/src && /usr/local/bin/msgfmt --desktop -d /portworks/obj/fcitx5-kkc-5.0.6/fcitx5-kkc-5.0.6/po --template /portworks/obj/fcitx5-kkc-5.0.6/fcitx5-kkc-5.0.6/src/kkc.conf.in -o /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/src/kkc.conf
+[15/30] cd /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui && /usr/local/bin/cmake -E cmake_autogen /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui/CMakeFiles/fcitx5-kkc-config_autogen.dir/AutogenInfo.json Release && /usr/local/bin/cmake -E touch /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui/fcitx5-kkc-config_autogen/timestamp && /usr/local/bin/cmake -E cmake_transform_depfile Ninja gccdepfile /portworks/obj/fcitx5-kkc-5.0.6/fcitx5-kkc-5.0.6 /portworks/obj/fcitx5-kkc-5.0.6/fcitx5-kkc-5.0.6/gui /portworks/obj/fcitx5-kkc-5.0.6/build-amd64 /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui/fcitx5-kkc-config_autogen/deps /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/CMakeFiles/d/f5e1ddeb1aebbcbc9116743b8e8b774694da1d83d62d18aae22d629208e5e8d0.d
+AutoGen: Refreshing parse cache because it doesn't exist.
+AutoMoc: Generating "BIN:/gui/fcitx5-kkc-config_autogen/moc_predefs.h", because it doesn't exist.
+/portworks/obj/fcitx5-kkc-5.0.6/bin/c++ -dM -E -c /usr/local/share/cmake/Modules/CMakeCXXCompilerABI.cpp "-DFCITX_GETTEXT_DOMAIN=\"fcitx5-kkc\"" "-DFCITX_INSTALL_LOCALEDIR=\"/usr/local/share/locale\"" -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_WIDGETS_LIB -D_GNU_SOURCE -Dfcitx5_kkc_config_EXPORTS -I/portworks/obj/fcitx5-kkc-5.0.6/build-amd64 -I/portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui -I/usr/local/include/X11/qt5 -I/usr/local/include/X11/qt5/QtCore -I/usr/local/lib/qt5/mkspecs/openbsd-clang -I/usr/local/include/X11/qt5/QtWidgets -I/usr/local/include/X11/qt5/QtGui -I/usr/X11R6/include -I/usr/local/include/Fcitx5Qt5/Fcitx5QtWidgetsAddons -I/usr/local/include/Fcitx5/Utils -I/usr/local/include -I/usr/local/include/glib-2.0 -I/usr/local/lib/glib-2.0/include -I/usr/local/include/json-glib-1.0 -I/usr/local/include/gee-0.8 -I/usr/include/c++/v1 -I/usr/lib/clang/13.0.0/include -I/usr/include
+AutoGen: Parsing "SRC:/gui/adddictdialog.h"
+AutoGen: Parsing "SRC:/gui/addshortcutdialog.h"
+AutoGen: Parsing "SRC:/gui/dictmodel.h"
+AutoGen: Parsing "SRC:/gui/dictwidget.h"
+AutoGen: Parsing "SRC:/gui/main.h"
+AutoGen: Parsing "SRC:/gui/shortcutmodel.h"
+AutoGen: Parsing "SRC:/gui/rulemodel.h"
+AutoGen: Parsing "SRC:/gui/shortcutwidget.h"
+AutoGen: Parsing "SRC:/gui/adddictdialog.cpp"
+AutoGen: Parsing "SRC:/gui/addshortcutdialog.cpp"
+AutoGen: Parsing "SRC:/gui/dictmodel.cpp"
+AutoGen: Parsing "SRC:/gui/dictwidget.cpp"
+AutoGen: Parsing "SRC:/gui/main.cpp"
+AutoGen: Parsing "SRC:/gui/rulemodel.cpp"
+AutoGen: Parsing "SRC:/gui/shortcutmodel.cpp"
+AutoGen: Parsing "SRC:/gui/shortcutwidget.cpp"
+AutoMoc: Generating "BIN:/gui/fcitx5-kkc-config_autogen/EWIEGA46WW/moc_addshortcutdialog.cpp", because it doesn't exist, from "SRC:/gui/addshortcutdialog.h"
+/usr/local/lib/qt5/bin/moc "-DFCITX_GETTEXT_DOMAIN=\"fcitx5-kkc\"" "-DFCITX_INSTALL_LOCALEDIR=\"/usr/local/share/locale\"" -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_WIDGETS_LIB -D_GNU_SOURCE -Dfcitx5_kkc_config_EXPORTS -I/portworks/obj/fcitx5-kkc-5.0.6/build-amd64 -I/portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui -I/usr/local/include/X11/qt5 -I/usr/local/include/X11/qt5/QtCore -I/usr/local/lib/qt5/mkspecs/openbsd-clang -I/usr/local/include/X11/qt5/QtWidgets -I/usr/local/include/X11/qt5/QtGui -I/usr/X11R6/include -I/usr/local/include/Fcitx5Qt5/Fcitx5QtWidgetsAddons -I/usr/local/include/Fcitx5/Utils -I/usr/local/include -I/usr/local/include/glib-2.0 -I/usr/local/lib/glib-2.0/include -I/usr/local/include/json-glib-1.0 -I/usr/local/include/gee-0.8 -I/usr/include/c++/v1 -I/usr/lib/clang/13.0.0/include -I/usr/include --include /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui/fcitx5-kkc-config_autogen/moc_predefs.h --output-dep-file -o /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui/fcitx5-kkc-config_autogen/EWIEGA46WW/moc_addshortcutdialog.cpp /portworks/obj/fcitx5-kkc-5.0.6/fcitx5-kkc-5.0.6/gui/addshortcutdialog.h
+AutoMoc: Generating "BIN:/gui/fcitx5-kkc-config_autogen/EWIEGA46WW/moc_adddictdialog.cpp", because it doesn't exist, from "SRC:/gui/adddictdialog.h"
+/usr/local/lib/qt5/bin/moc "-DFCITX_GETTEXT_DOMAIN=\"fcitx5-kkc\"" "-DFCITX_INSTALL_LOCALEDIR=\"/usr/local/share/locale\"" -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_WIDGETS_LIB -D_GNU_SOURCE -Dfcitx5_kkc_config_EXPORTS -I/portworks/obj/fcitx5-kkc-5.0.6/build-amd64 -I/portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui -I/usr/local/include/X11/qt5 -I/usr/local/include/X11/qt5/QtCore -I/usr/local/lib/qt5/mkspecs/openbsd-clang -I/usr/local/include/X11/qt5/QtWidgets -I/usr/local/include/X11/qt5/QtGui -I/usr/X11R6/include -I/usr/local/include/Fcitx5Qt5/Fcitx5QtWidgetsAddons -I/usr/local/include/Fcitx5/Utils -I/usr/local/include -I/usr/local/include/glib-2.0 -I/usr/local/lib/glib-2.0/include -I/usr/local/include/json-glib-1.0 -I/usr/local/include/gee-0.8 -I/usr/include/c++/v1 -I/usr/lib/clang/13.0.0/include -I/usr/include --include /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui/fcitx5-kkc-config_autogen/moc_predefs.h --output-dep-file -o /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui/fcitx5-kkc-config_autogen/EWIEGA46WW/moc_adddictdialog.cpp /portworks/obj/fcitx5-kkc-5.0.6/fcitx5-kkc-5.0.6/gui/adddictdialog.h
+AutoMoc: Generating "BIN:/gui/fcitx5-kkc-config_autogen/EWIEGA46WW/moc_dictwidget.cpp", because it doesn't exist, from "SRC:/gui/dictwidget.h"
+/usr/local/lib/qt5/bin/moc "-DFCITX_GETTEXT_DOMAIN=\"fcitx5-kkc\"" "-DFCITX_INSTALL_LOCALEDIR=\"/usr/local/share/locale\"" -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_WIDGETS_LIB -D_GNU_SOURCE -Dfcitx5_kkc_config_EXPORTS -I/portworks/obj/fcitx5-kkc-5.0.6/build-amd64 -I/portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui -I/usr/local/include/X11/qt5 -I/usr/local/include/X11/qt5/QtCore -I/usr/local/lib/qt5/mkspecs/openbsd-clang -I/usr/local/include/X11/qt5/QtWidgets -I/usr/local/include/X11/qt5/QtGui -I/usr/X11R6/include -I/usr/local/include/Fcitx5Qt5/Fcitx5QtWidgetsAddons -I/usr/local/include/Fcitx5/Utils -I/usr/local/include -I/usr/local/include/glib-2.0 -I/usr/local/lib/glib-2.0/include -I/usr/local/include/json-glib-1.0 -I/usr/local/include/gee-0.8 -I/usr/include/c++/v1 -I/usr/lib/clang/13.0.0/include -I/usr/include --include /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui/fcitx5-kkc-config_autogen/moc_predefs.h --output-dep-file -o /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui/fcitx5-kkc-config_autogen/EWIEGA46WW/moc_dictwidget.cpp /portworks/obj/fcitx5-kkc-5.0.6/fcitx5-kkc-5.0.6/gui/dictwidget.h
+AutoMoc: Generating "BIN:/gui/fcitx5-kkc-config_autogen/EWIEGA46WW/moc_dictmodel.cpp", because it doesn't exist, from "SRC:/gui/dictmodel.h"
+/usr/local/lib/qt5/bin/moc "-DFCITX_GETTEXT_DOMAIN=\"fcitx5-kkc\"" "-DFCITX_INSTALL_LOCALEDIR=\"/usr/local/share/locale\"" -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_WIDGETS_LIB -D_GNU_SOURCE -Dfcitx5_kkc_config_EXPORTS -I/portworks/obj/fcitx5-kkc-5.0.6/build-amd64 -I/portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui -I/usr/local/include/X11/qt5 -I/usr/local/include/X11/qt5/QtCore -I/usr/local/lib/qt5/mkspecs/openbsd-clang -I/usr/local/include/X11/qt5/QtWidgets -I/usr/local/include/X11/qt5/QtGui -I/usr/X11R6/include -I/usr/local/include/Fcitx5Qt5/Fcitx5QtWidgetsAddons -I/usr/local/include/Fcitx5/Utils -I/usr/local/include -I/usr/local/include/glib-2.0 -I/usr/local/lib/glib-2.0/include -I/usr/local/include/json-glib-1.0 -I/usr/local/include/gee-0.8 -I/usr/include/c++/v1 -I/usr/lib/clang/13.0.0/include -I/usr/include --include /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui/fcitx5-kkc-config_autogen/moc_predefs.h --output-dep-file -o /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui/fcitx5-kkc-config_autogen/EWIEGA46WW/moc_dictmodel.cpp /portworks/obj/fcitx5-kkc-5.0.6/fcitx5-kkc-5.0.6/gui/dictmodel.h
+AutoMoc: Reading dependencies from "BIN:/gui/fcitx5-kkc-config_autogen/EWIEGA46WW/moc_dictmodel.cpp.d"
+AutoMoc: Generating "BIN:/gui/fcitx5-kkc-config_autogen/EWIEGA46WW/moc_main.cpp", because it doesn't exist, from "SRC:/gui/main.h"
+/usr/local/lib/qt5/bin/moc "-DFCITX_GETTEXT_DOMAIN=\"fcitx5-kkc\"" "-DFCITX_INSTALL_LOCALEDIR=\"/usr/local/share/locale\"" -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_WIDGETS_LIB -D_GNU_SOURCE -Dfcitx5_kkc_config_EXPORTS -I/portworks/obj/fcitx5-kkc-5.0.6/build-amd64 -I/portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui -I/usr/local/include/X11/qt5 -I/usr/local/include/X11/qt5/QtCore -I/usr/local/lib/qt5/mkspecs/openbsd-clang -I/usr/local/include/X11/qt5/QtWidgets -I/usr/local/include/X11/qt5/QtGui -I/usr/X11R6/include -I/usr/local/include/Fcitx5Qt5/Fcitx5QtWidgetsAddons -I/usr/local/include/Fcitx5/Utils -I/usr/local/include -I/usr/local/include/glib-2.0 -I/usr/local/lib/glib-2.0/include -I/usr/local/include/json-glib-1.0 -I/usr/local/include/gee-0.8 -I/usr/include/c++/v1 -I/usr/lib/clang/13.0.0/include -I/usr/include --include /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui/fcitx5-kkc-config_autogen/moc_predefs.h --output-dep-file -o /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui/fcitx5-kkc-config_autogen/EWIEGA46WW/moc_main.cpp /portworks/obj/fcitx5-kkc-5.0.6/fcitx5-kkc-5.0.6/gui/main.h
+AutoMoc: Reading dependencies from "BIN:/gui/fcitx5-kkc-config_autogen/EWIEGA46WW/moc_dictwidget.cpp.d"
+AutoMoc: Generating "BIN:/gui/fcitx5-kkc-config_autogen/EWIEGA46WW/moc_rulemodel.cpp", because it doesn't exist, from "SRC:/gui/rulemodel.h"
+/usr/local/lib/qt5/bin/moc "-DFCITX_GETTEXT_DOMAIN=\"fcitx5-kkc\"" "-DFCITX_INSTALL_LOCALEDIR=\"/usr/local/share/locale\"" -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_WIDGETS_LIB -D_GNU_SOURCE -Dfcitx5_kkc_config_EXPORTS -I/portworks/obj/fcitx5-kkc-5.0.6/build-amd64 -I/portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui -I/usr/local/include/X11/qt5 -I/usr/local/include/X11/qt5/QtCore -I/usr/local/lib/qt5/mkspecs/openbsd-clang -I/usr/local/include/X11/qt5/QtWidgets -I/usr/local/include/X11/qt5/QtGui -I/usr/X11R6/include -I/usr/local/include/Fcitx5Qt5/Fcitx5QtWidgetsAddons -I/usr/local/include/Fcitx5/Utils -I/usr/local/include -I/usr/local/include/glib-2.0 -I/usr/local/lib/glib-2.0/include -I/usr/local/include/json-glib-1.0 -I/usr/local/include/gee-0.8 -I/usr/include/c++/v1 -I/usr/lib/clang/13.0.0/include -I/usr/include --include /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui/fcitx5-kkc-config_autogen/moc_predefs.h --output-dep-file -o /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui/fcitx5-kkc-config_autogen/EWIEGA46WW/moc_rulemodel.cpp /portworks/obj/fcitx5-kkc-5.0.6/fcitx5-kkc-5.0.6/gui/rulemodel.h
+AutoMoc: Reading dependencies from "BIN:/gui/fcitx5-kkc-config_autogen/EWIEGA46WW/moc_adddictdialog.cpp.d"
+AutoMoc: Generating "BIN:/gui/fcitx5-kkc-config_autogen/EWIEGA46WW/moc_shortcutmodel.cpp", because it doesn't exist, from "SRC:/gui/shortcutmodel.h"
+/usr/local/lib/qt5/bin/moc "-DFCITX_GETTEXT_DOMAIN=\"fcitx5-kkc\"" "-DFCITX_INSTALL_LOCALEDIR=\"/usr/local/share/locale\"" -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_WIDGETS_LIB -D_GNU_SOURCE -Dfcitx5_kkc_config_EXPORTS -I/portworks/obj/fcitx5-kkc-5.0.6/build-amd64 -I/portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui -I/usr/local/include/X11/qt5 -I/usr/local/include/X11/qt5/QtCore -I/usr/local/lib/qt5/mkspecs/openbsd-clang -I/usr/local/include/X11/qt5/QtWidgets -I/usr/local/include/X11/qt5/QtGui -I/usr/X11R6/include -I/usr/local/include/Fcitx5Qt5/Fcitx5QtWidgetsAddons -I/usr/local/include/Fcitx5/Utils -I/usr/local/include -I/usr/local/include/glib-2.0 -I/usr/local/lib/glib-2.0/include -I/usr/local/include/json-glib-1.0 -I/usr/local/include/gee-0.8 -I/usr/include/c++/v1 -I/usr/lib/clang/13.0.0/include -I/usr/include --include /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui/fcitx5-kkc-config_autogen/moc_predefs.h --output-dep-file -o /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui/fcitx5-kkc-config_autogen/EWIEGA46WW/moc_shortcutmodel.cpp /portworks/obj/fcitx5-kkc-5.0.6/fcitx5-kkc-5.0.6/gui/shortcutmodel.h
+AutoMoc: Reading dependencies from "BIN:/gui/fcitx5-kkc-config_autogen/EWIEGA46WW/moc_addshortcutdialog.cpp.d"
+AutoMoc: Generating "BIN:/gui/fcitx5-kkc-config_autogen/EWIEGA46WW/moc_shortcutwidget.cpp", because it doesn't exist, from "SRC:/gui/shortcutwidget.h"
+/usr/local/lib/qt5/bin/moc "-DFCITX_GETTEXT_DOMAIN=\"fcitx5-kkc\"" "-DFCITX_INSTALL_LOCALEDIR=\"/usr/local/share/locale\"" -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_WIDGETS_LIB -D_GNU_SOURCE -Dfcitx5_kkc_config_EXPORTS -I/portworks/obj/fcitx5-kkc-5.0.6/build-amd64 -I/portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui -I/usr/local/include/X11/qt5 -I/usr/local/include/X11/qt5/QtCore -I/usr/local/lib/qt5/mkspecs/openbsd-clang -I/usr/local/include/X11/qt5/QtWidgets -I/usr/local/include/X11/qt5/QtGui -I/usr/X11R6/include -I/usr/local/include/Fcitx5Qt5/Fcitx5QtWidgetsAddons -I/usr/local/include/Fcitx5/Utils -I/usr/local/include -I/usr/local/include/glib-2.0 -I/usr/local/lib/glib-2.0/include -I/usr/local/include/json-glib-1.0 -I/usr/local/include/gee-0.8 -I/usr/include/c++/v1 -I/usr/lib/clang/13.0.0/include -I/usr/include --include /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui/fcitx5-kkc-config_autogen/moc_predefs.h --output-dep-file -o /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui/fcitx5-kkc-config_autogen/EWIEGA46WW/moc_shortcutwidget.cpp /portworks/obj/fcitx5-kkc-5.0.6/fcitx5-kkc-5.0.6/gui/shortcutwidget.h
+AutoMoc: Reading dependencies from "BIN:/gui/fcitx5-kkc-config_autogen/EWIEGA46WW/moc_main.cpp.d"
+AutoMoc: Reading dependencies from "BIN:/gui/fcitx5-kkc-config_autogen/EWIEGA46WW/moc_shortcutmodel.cpp.d"
+AutoMoc: Reading dependencies from "BIN:/gui/fcitx5-kkc-config_autogen/EWIEGA46WW/moc_rulemodel.cpp.d"
+AutoMoc: Reading dependencies from "BIN:/gui/fcitx5-kkc-config_autogen/EWIEGA46WW/moc_shortcutwidget.cpp.d"
+AutoMoc: Generating MOC compilation "BIN:/gui/fcitx5-kkc-config_autogen/mocs_compilation.cpp"
+AutoMoc: Merging MOC dependencies into "BIN:/gui/fcitx5-kkc-config_autogen/deps"
+AutoGen: Writing the parse cache file "BIN:/gui/CMakeFiles/fcitx5-kkc-config_autogen.dir/ParseCache.txt"
+AutoGen: Writing the settings file "BIN:/gui/CMakeFiles/fcitx5-kkc-config_autogen.dir/AutogenUsed.txt"
+[16/30] : && /portworks/obj/fcitx5-kkc-5.0.6/bin/c++ -fPIC -Wall -Wextra -O2 -pipe -DNDEBUG   -shared  -o src/kkc.so src/CMakeFiles/kkc.dir/kkc.cpp.o -L/usr/local/lib -Wl,-z,origin,-rpath,/usr/local/lib:  -lFcitx5Core  -lFcitx5Config  /usr/local/lib/libkkc.so.2.0  -lFcitx5Utils  -ljson-glib-1.0  -lgio-2.0  -lgee-0.8  -lgobject-2.0  -lglib-2.0  -lintl  -Wl,-rpath-link,/usr/X11R6/lib:/usr/local/lib && :
+[17/30] cd /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui && /usr/local/lib/qt5/bin/uic -o /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui/ui_dictwidget.h /portworks/obj/fcitx5-kkc-5.0.6/fcitx5-kkc-5.0.6/gui/dictwidget.ui
+[18/30] cd /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui && /usr/local/lib/qt5/bin/uic -o /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui/ui_adddictdialog.h /portworks/obj/fcitx5-kkc-5.0.6/fcitx5-kkc-5.0.6/gui/adddictdialog.ui
+[19/30] cd /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui && /usr/local/lib/qt5/bin/uic -o /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui/ui_shortcutwidget.h /portworks/obj/fcitx5-kkc-5.0.6/fcitx5-kkc-5.0.6/gui/shortcutwidget.ui
+[20/30] cd /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui && /usr/local/lib/qt5/bin/uic -o /portworks/obj/fcitx5-kkc-5.0.6/build-amd64/gui/ui_addshortcutdialog.h /portworks/obj/fcitx5-kkc-5.0.6/fcitx5-kkc-5.0.6/gui/addshortcutdialog.ui
+[21/30] /portworks/obj/fcitx5-kkc-5.0.6/bin/c++ -DFCITX_GETTEXT_DOMAIN=\"fcitx5-kkc\" -DFCITX_INSTALL_LOCALEDIR=\"/usr/local/share/locale\" -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_WIDGETS_LIB -D_GNU_SOURCE -Dfcitx5_kkc_config_EXPORTS -Igui/fcitx5-kkc-config_autogen/include -I. -Igui -isystem /usr/local/include/X11/qt5 -isystem /usr/local/include/X11/qt5/QtCore -isystem /usr/local/lib/qt5/./mkspecs/openbsd-clang -isystem /usr/local/include/X11/qt5/QtWidgets -isystem /usr/local/include/X11/qt5/QtGui -isystem /usr/X11R6/include -isystem /usr/local/include/Fcitx5Qt5/Fcitx5QtWidgetsAddons -isystem /usr/local/include/Fcitx5/Utils -isystem /usr/local/include -isystem /usr/local/include/glib-2.0 -isystem /usr/local/lib/glib-2.0/include -isystem /usr/local/include/json-glib-1.0 -isystem /usr/local/include/gee-0.8 -Wall -Wextra -O2 -pipe -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -std=c++11 -fPIC -pthread -std=c++17 -MD -MT gui/CMakeFiles/fcitx5-kkc-config.dir/fcitx5-kkc-config_autogen/mocs_compilation.cpp.o -MF gui/CMakeFiles/fcitx5-kkc-config.dir/fcitx5-kkc-config_autogen/mocs_compilation.cpp.o.d -o gui/CMakeFiles/fcitx5-kkc-config.dir/fcitx5-kkc-config_autogen/mocs_compilation.cpp.o -c gui/fcitx5-kkc-config_autogen/mocs_compilation.cpp
+[22/30] /portworks/obj/fcitx5-kkc-5.0.6/bin/c++ -DFCITX_GETTEXT_DOMAIN=\"fcitx5-kkc\" -DFCITX_INSTALL_LOCALEDIR=\"/usr/local/share/locale\" -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_WIDGETS_LIB -D_GNU_SOURCE -Dfcitx5_kkc_config_EXPORTS -Igui/fcitx5-kkc-config_autogen/include -I. -Igui -isystem /usr/local/include/X11/qt5 -isystem /usr/local/include/X11/qt5/QtCore -isystem /usr/local/lib/qt5/./mkspecs/openbsd-clang -isystem /usr/local/include/X11/qt5/QtWidgets -isystem /usr/local/include/X11/qt5/QtGui -isystem /usr/X11R6/include -isystem /usr/local/include/Fcitx5Qt5/Fcitx5QtWidgetsAddons -isystem /usr/local/include/Fcitx5/Utils -isystem /usr/local/include -isystem /usr/local/include/glib-2.0 -isystem /usr/local/lib/glib-2.0/include -isystem /usr/local/include/json-glib-1.0 -isystem /usr/local/include/gee-0.8 -Wall -Wextra -O2 -pipe -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -std=c++11 -fPIC -pthread -std=c++17 -MD -MT gui/CMakeFiles/fcitx5-kkc-config.dir/main.cpp.o -MF gui/CMakeFiles/fcitx5-kkc-config.dir/main.cpp.o.d -o gui/CMakeFiles/fcitx5-kkc-config.dir/main.cpp.o -c /portworks/obj/fcitx5-kkc-5.0.6/fcitx5-kkc-5.0.6/gui/main.cpp
+[23/30] /portworks/obj/fcitx5-kkc-5.0.6/bin/c++ -DFCITX_GETTEXT_DOMAIN=\"fcitx5-kkc\" -DFCITX_INSTALL_LOCALEDIR=\"/usr/local/share/locale\" -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_WIDGETS_LIB -D_GNU_SOURCE -Dfcitx5_kkc_config_EXPORTS -Igui/fcitx5-kkc-config_autogen/include -I. -Igui -isystem /usr/local/include/X11/qt5 -isystem /usr/local/include/X11/qt5/QtCore -isystem /usr/local/lib/qt5/./mkspecs/openbsd-clang -isystem /usr/local/include/X11/qt5/QtWidgets -isystem /usr/local/include/X11/qt5/QtGui -isystem /usr/X11R6/include -isystem /usr/local/include/Fcitx5Qt5/Fcitx5QtWidgetsAddons -isystem /usr/local/include/Fcitx5/Utils -isystem /usr/local/include -isystem /usr/local/include/glib-2.0 -isystem /usr/local/lib/glib-2.0/include -isystem /usr/local/include/json-glib-1.0 -isystem /usr/local/include/gee-0.8 -Wall -Wextra -O2 -pipe -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -std=c++11 -fPIC -pthread -std=c++17 -MD -MT gui/CMakeFiles/fcitx5-kkc-config.dir/dictwidget.cpp.o -MF gui/CMakeFiles/fcitx5-kkc-config.dir/dictwidget.cpp.o.d -o gui/CMakeFiles/fcitx5-kkc-config.dir/dictwidget.cpp.o -c /portworks/obj/fcitx5-kkc-5.0.6/fcitx5-kkc-5.0.6/gui/dictwidget.cpp
+[24/30] /portworks/obj/fcitx5-kkc-5.0.6/bin/c++ -DFCITX_GETTEXT_DOMAIN=\"fcitx5-kkc\" -DFCITX_INSTALL_LOCALEDIR=\"/usr/local/share/locale\" -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_WIDGETS_LIB -D_GNU_SOURCE -Dfcitx5_kkc_config_EXPORTS -Igui/fcitx5-kkc-config_autogen/include -I. -Igui -isystem /usr/local/include/X11/qt5 -isystem /usr/local/include/X11/qt5/QtCore -isystem /usr/local/lib/qt5/./mkspecs/openbsd-clang -isystem /usr/local/include/X11/qt5/QtWidgets -isystem /usr/local/include/X11/qt5/QtGui -isystem /usr/X11R6/include -isystem /usr/local/include/Fcitx5Qt5/Fcitx5QtWidgetsAddons -isystem /usr/local/include/Fcitx5/Utils -isystem /usr/local/include -isystem /usr/local/include/glib-2.0 -isystem /usr/local/lib/glib-2.0/include -isystem /usr/local/include/json-glib-1.0 -isystem /usr/local/include/gee-0.8 -Wall -Wextra -O2 -pipe -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -std=c++11 -fPIC -pthread -std=c++17 -MD -MT gui/CMakeFiles/fcitx5-kkc-config.dir/adddictdialog.cpp.o -MF gui/CMakeFiles/fcitx5-kkc-config.dir/adddictdialog.cpp.o.d -o gui/CMakeFiles/fcitx5-kkc-config.dir/adddictdialog.cpp.o -c /portworks/obj/fcitx5-kkc-5.0.6/fcitx5-kkc-5.0.6/gui/adddictdialog.cpp
+FAILED: gui/CMakeFiles/fcitx5-kkc-config.dir/adddictdialog.cpp.o 
+/portworks/obj/fcitx5-kkc-5.0.6/bin/c++ -DFCITX_GETTEXT_DOMAIN=\"fcitx5-kkc\" -DFCITX_INSTALL_LOCALEDIR=\"/usr/local/share/locale\" -DQT_CORE_LIB -DQT_GUI_LIB -DQT_NO_DEBUG -DQT_NO_KEYWORDS -DQT_WIDGETS_LIB -D_GNU_SOURCE -Dfcitx5_kkc_config_EXPORTS -Igui/fcitx5-kkc-config_autogen/include -I. -Igui -isystem /usr/local/include/X11/qt5 -isystem /usr/local/include/X11/qt5/QtCore -isystem /usr/local/lib/qt5/./mkspecs/openbsd-clang -isystem /usr/local/include/X11/qt5/QtWidgets -isystem /usr/local/include/X11/qt5/QtGui -isystem /usr/X11R6/include -isystem /usr/local/include/Fcitx5Qt5/Fcitx5QtWidgetsAddons -isystem /usr/local/include/Fcitx5/Utils -isystem /usr/local/include -isystem /usr/local/include/glib-2.0 -isystem /usr/local/lib/glib-2.0/include -isystem /usr/local/include/json-glib-1.0 -isystem /usr/local/include/gee-0.8 -Wall -Wextra -O2 -pipe -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden   -std=c++11 -fPIC -pthread -std=c++17 -MD -MT gui/CMakeFiles/fcitx5-kkc-config.dir/adddictdialog.cpp.o -MF gui/CMakeFiles/fcitx5-kkc-config.dir/adddictdialog.cpp.o.d -o gui/CMakeFiles/fcitx5-kkc-config.dir/adddictdialog.cpp.o -c /portworks/obj/fcitx5-kkc-5.0.6/fcitx5-kkc-5.0.6/gui/adddictdialog.cpp
+/portworks/obj/fcitx5-kkc-5.0.6/fcitx5-kkc-5.0.6/gui/adddictdialog.cpp:20:39: error: constexpr variable cannot have non-literal type 'const std::array<const char *, 2>'
+constexpr std::array<const char *, 2> type = {"readonly", "readwrite"};
+                                      ^
+/portworks/obj/fcitx5-kkc-5.0.6/fcitx5-kkc-5.0.6/gui/adddictdialog.cpp:20:39: error: implicit instantiation of undefined template 'std::array<const char *, 2>'
+/usr/include/c++/v1/__tuple:219:64: note: template is declared here
+template <class _Tp, size_t _Size> struct _LIBCPP_TEMPLATE_VIS array;
+                                                               ^
+2 errors generated.
+ninja: build stopped: subcommand failed.
+*** Error 1 in . (/usr/ports/devel/cmake/cmake.port.mk:36 'do-build': @cd /portworks/obj/fcitx5-kkc-5.0.6/build-amd64 && exec /usr/bin/env -...)
+*** Error 2 in . (/usr/ports/infrastructure/mk/bsd.port.mk:2944 '/portworks/obj/fcitx5-kkc-5.0.6/build-amd64/.build_done': @cd /usr/ports/in...)
+*** Error 2 in /usr/ports/inputmethods/fcitx5-kkc (/usr/ports/infrastructure/mk/bsd.port.mk:2594 'all': @lock=fcitx5-kkc-5.0.6;  export _LOC...)
